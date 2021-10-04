@@ -108,6 +108,11 @@ a:hover, button:hover {
 .s-m-btn-2 {
   background-color: #03192e;
   color: #F47850;
+  margin-bottom: 28px;
+}
+
+.footer__text {
+  padding: 12px;
 }
 
 .time-load-section {
