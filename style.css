@@ -22,7 +22,12 @@ body {
   text-align: center;
 }
 
+:root {
+  --gradient-color: linear-gradient(45deg, #F47850, #FFA93A);
+}
+
 button {
+  font-family: 'Poppins', sans-serif;
   color: #04223e;
   border: 0;
   font-weight: 600;
@@ -43,7 +48,7 @@ a:hover, button:hover {
 
 .navbar {
   list-style-type: none;
-  padding: 5px;
+  padding: 0px 10px;
 }
 
 .navbar .nav-item:not(:last-child) {
@@ -83,7 +88,7 @@ a:hover, button:hover {
 
 .hero-btn {
   font-size: 25px;
-  background: linear-gradient(45deg, #F47850, #FFA93A);
+  background: var(--gradient-color);
 }
 
 .hero-btn-link {
@@ -91,7 +96,7 @@ a:hover, button:hover {
 }
 
 .s-m-section {
-  background: linear-gradient(45deg, #F47850, #FFA93A);
+  background: var(--gradient-color);
   padding: 20px;
 }
 
@@ -130,6 +135,11 @@ a:hover, button:hover {
   color: #414f7b;
   margin: 15px;
   box-shadow: -1px 1px 20px 2px #00000030;
+  transition: all 0.4s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-7px);
 }
 
 .statics-section {
@@ -181,6 +191,11 @@ a:hover, button:hover {
 
 .container-title {
   margin-bottom: 42px;
+}
+
+.footer__text a {
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 @media (min-width: 768px) {
