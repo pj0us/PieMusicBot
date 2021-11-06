@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffe700">
     <meta name="description" content="A Music Bot With Interesting Features Like Covid, Films, Weather, Instagram, Meme !">
     <meta name="keywords" content="Music Bot, Discord, Bot, Discord Bot, Pie Music, Pie Music Bot, PieMusic, PieMusicBot">
@@ -14,19 +14,21 @@
     <meta name="og:description" content="A Music Bot In Discord With Some Interesting Features! Support Youtube, Spotify, SoundCloud And More...">
 
     <title>Pie Music Bot - A Music Bot With Interesting Features !</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/P for website.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
   </head>  
   <body>
       <ul class="navbar">
-        <li class="nav-item"><a href=""><img width="60" height="60" src="./img/P for website.png" /></a></li>
-        <li class="nav-item"><a href="#" ><br>Home</a></li>
-        <li class="nav-item"><a href="#features" ><br>Features</a></li>
-        <li class="nav-item"><a href="https://discord.gg/dbDrAz8K9Y"><br>Support Server</a></li>
-        <li class="nav-item"><a href="https://top.gg/bot/864821086490066974">Upvote</a></li>
+        <li class="nav-item logo-pie"><a href=""><img width="60" height="60" src="./img/P for website.png" /></a></li>
+        <li class="nav-item item-pick"><a href="#" ><br>Home</a></li>
+        <li class="nav-item item-pick"><a href="#features" ><br>Features</a></li>
+        <li class="nav-item item-pick"><a href="https://discord.gg/dbDrAz8K9Y"><br>Support Server</a></li>
+        <li class="nav-item"><a  class="nav-item-link" href="https://top.gg/bot/864821086490066974">Upvote</a></li>
       </ul>
     
     <header class="hero-section">
@@ -37,15 +39,15 @@
         A Music Bot In Discord With Some Interesting Features !
       </p>
       <button class="hero-btn">
-        <a href="https://discord.com/api/oauth2/authorize?client_id=864821086490066974&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.gg%2FdbDrAz8K9Y&response_type=code&scope=bot%20email%20applications.commands%20guilds%20identify">
-        Add to server
+        <a href="https://discord.com/api/oauth2/authorize?client_id=864821086490066974&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.gg%2FdbDrAz8K9Y&response_type=code&scope=bot%20email%20applications.commands%20guilds%20identify" class="hero-btn-link" target="_black">
+          Add to server
         </a>
       </button>
     </header>
     
     <div class="time-load-section">
       <div class="container">
-      <h1>
+      <h1 class="container-title">
         Be special with Pie Music !
       </h1>
         
@@ -94,19 +96,19 @@
         <h2>
           USERS:
         </h2>
-        >=20000
+        <p class="statics-desc">>=30000</p>
       </div>
       <div class="statics-rows">
         <h2>
         GUILDS:
         </h2>
-        >=100
+        <p class="statics-desc">>=90</p>
       </div>
       <div class="statics-rows">
         <h2>
         UPTIME:
         </h2>
-        ~98.99%
+        <p class="statics-desc">~98.99%</p>
       </div>
       </div>
       </div>
@@ -117,24 +119,27 @@
         Features of Pie Music
       </h1>
       <p class="features-desciption">
-        Support youtube, soundcloud, spotify and more ! If you need help, Join<u><strong><a href="https://discord.gg/dbDrAz8K9Y">Support Server</a></strong></u>Now !
+        Support Youtube, Soundcloud, Spotify and more ! If you need help, Join<u><strong><a href="https://discord.gg/dbDrAz8K9Y">Support Server</a></strong></u>Now !
       </p>
       <div class="row">
+        <div class="row_4">
         <div class="features-card">
-          <img src="./img/music.png" class="card-image" width="200">
+          <i class="card-icon fas fa-compact-disc"></i>
           <h4 class="card-title">
             Music Features
           </h4>
           <br>
           <p class="card-description">
-            Play music with title, url from youtube, soundcloud, spotify !
+            Play music with title, url from Youtube, Soundcloud, Spotify !
           </p>
           <p class="card-description">
             Or Search Lyrics Of A Song With Title !
           </p>
         </div>
+        </div>
+        <div class="row_4">
         <div class="features-card">
-          <img src="./img/social.png" class="card-image" width="200">
+          <i class="card-icon fas fa-users"></i>
           <h4 class="card-title">
             Social Features
           </h4>
@@ -146,8 +151,10 @@
             Or covid or weather from a country!
           </p>
         </div>
+        </div>
+        <div class="row_4">
         <div class="features-card">
-          <img src="./img/moderator.png" class="card-image" width="200">
+          <i class="card-icon fas fa-tools"></i>
           <h4 class="card-title">
             Manage Bot
           </h4>
@@ -156,9 +163,11 @@
             Easy manage this bot with 1 message !
           </p>
         </div>
-                <div class="features-card">
-          <img src="./img/community.png" class="card-image" width="200">
-          <h4 class="card-title">
+        </div>
+        <div class="row_4">
+          <div class="features-card">
+            <i class="card-icon fas fa-terminal"></i>
+          <h4 class="card-title not-active">
             Quick support, developer friendly
           </h4>
           <br>
@@ -168,6 +177,7 @@
           <p class="card-description">
             You can mention developer in Support Server for quick fix
           </p>
+        </div>
         </div>
       </div>
     </div>
@@ -181,11 +191,13 @@
         To discover more and more
       </p>
         <button class="s-m-btn-2">
-          <a href="https://discord.com/api/oauth2/authorize?client_id=864821086490066974&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.gg%2FdbDrAz8K9Y&response_type=code&scope=bot%20email%20applications.commands%20guilds%20identify">
-          Invite Bot
+          <a href="https://discord.com/api/oauth2/authorize?client_id=864821086490066974&permissions=8&redirect_uri=https%3A%2F%2Fdiscord.gg%2FdbDrAz8K9Y&response_type=code&scope=bot%20email%20applications.commands%20guilds%20identify" class="s-m-btn-2-link" target="_black">
+            Invite Bot
           </a>
         </button>
     </div>
+    <!-- <br>
+    <script src="./script.js" defer></script> -->
     <footer>
       <p class="footer__text">Copyright © Pie Music 2021</p>
     </footer>
