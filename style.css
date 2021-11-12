@@ -376,6 +376,7 @@ a:hover, button:hover {
   }
 
   .card {
+    width: 95%;
     padding: 60px 10px;
   }
 }
